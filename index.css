@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+header {
+  padding: 30px 50px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav > h4 {
+  cursor: pointer;
+}
+.logo-sec {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  gap: 20px;
+}
+.hero {
+  position: relative;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+.hero-text-sec {
+  position: absolute;
+  bottom: 60px;
+  left: 50px;
+  width: 700px;
+  color: white;
+}
+.hero-text-sec > h3 {
+  font-size: 40px;
+}
+.hero-text-sec > p,
+.hero-text-sec > h3 {
+  margin-top: 10px;
+}
+.blog-sec {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 2em;
+  padding: 50px;
+}
+.blog-post > img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-post {
+  max-width: 450px;
+}
+
+.blog-post {
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+footer,
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view {
+  color: #000000;
+}
+footer {
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #202020;
+  width: 100%;
+  height: 105px;
+  color: white;
+}
+.blog-post > p,
+.blog-post > h3 {
+  margin-top: 14px;
+}
+
+@media (max-width: 750px) {
+  .hero-text-sec {
+    position: absolute;
+    bottom: 30px;
+    width: 450px;
+    left: 20px;
+  }
+  .hero-text-sec > h3 {
+    font-size: 20px;
+  }
+  .hero-text-sec > p {
+    font-size: 12px;
+  }
+  .blog-sec {
+    align-self: center;
+    justify-content: center;
+  }
+  .blog-post {
+    max-width: 80%;
+  }
+}
